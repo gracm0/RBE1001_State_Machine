@@ -2,16 +2,16 @@
 ## Introduction
 **A fully autonomous robot detects, collects, and deposits an "orange", "lemon", and "lime" from a tree to the corresponding baskets.** The robot utilizes a four-bar lift to reach the three different heights of tree branches and a claw to grab fruits of varying widths one at a time. The control system starts in a home state and moves through 3 position states, a searching state, an approaching state, an arm lifting state, and a grabbing state. Due to the time constraint, the state machine currently is only tested for an orange, however, the program in its current state can be edited to collect a lemon and lime as well.
 
-<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/9aa1931ab444b29fc0426b2ecca7ec9c427bc417/IMG_9548.png" width="250" />
+<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/9aa1931ab444b29fc0426b2ecca7ec9c427bc417/IMG_9548.png" width="300" />
 Figure 1. The four-bar lift robot with the claw and arm extended.
 
 ## System Integration
-<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/d2f7c373572d2b9203ddd38780ed6e4fe6dd485d/Screenshot%202024-04-29%20204121.png" width="300" />
+<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/d2f7c373572d2b9203ddd38780ed6e4fe6dd485d/Screenshot%202024-04-29%20204121.png" width="600" />
 Figure 2. State machine diagram of robot.
 
 The Vex sensors used are the V5 3-Wire UltraSonic Range Finder, V5 3-Wire Line Tracker, V5 Inertial Sensor, and V5 Vision Sensor. The state machine's subsystems include line following, IMU turning, camera vision, grabbing mechanism, driving with the IMU, and color detection. The line following, IMU turning, and driving with the IMU all employ proportional control with the line following using proportional-derivative control.
 
-<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/101687a723c7e7c70114739d6cec970e7f080621/Screenshot%202024-04-29%20200817.png" width="300" />
+<img src="https://github.com/gracm0/RBE1001_State_Machine/blob/101687a723c7e7c70114739d6cec970e7f080621/Screenshot%202024-04-29%20200817.png" width="600" />
 Figure 3. Diagram of the "orchard" the robot traverses.
 
 The line following subsystem uses the line trackers, which straddle the tape on the field, and the ultrasonic rangefinders on the front and back bumper of the robot. Using the rangefinders, when the robot reaches the specified distance, the robot will stop line following and go into the Searching State.
