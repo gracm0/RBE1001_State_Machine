@@ -1,6 +1,8 @@
 # RBE1001_Autonomous_Robot
+**A fully autonomous robot detects, collects, and deposits an "orange", "lemon", and "lime" from a tree to the corresponding baskets.**
+
 ## Introduction
-**A fully autonomous robot detects, collects, and deposits an "orange", "lemon", and "lime" from a tree to the corresponding baskets.** The robot utilizes a four-bar lift to reach the three different heights of tree branches and a claw to grab fruits of varying widths one at a time. The control system starts in a home state and moves through 3 position states, a searching state, an approaching state, an arm lifting state, and a grabbing state. Due to the time constraint, the state machine currently is only tested for an orange, however, the program in its current state can be edited to collect a lemon and lime as well.
+The robot utilizes a four-bar lift to reach the three different heights of tree branches and a claw to grab fruits of varying widths one at a time. The control system starts in a home state and moves through 3 position states, a searching state, an approaching state, an arm lifting state, and a grabbing state. Due to the time constraint, the state machine currently is only tested for an orange, however, the program in its current state can be edited to collect a lemon and lime as well.
 
 <img src="https://github.com/gracm0/RBE1001_State_Machine/blob/9aa1931ab444b29fc0426b2ecca7ec9c427bc417/IMG_9548.png" width="300" />
 Figure 1. The four-bar lift robot with the claw and arm extended.
